@@ -1,14 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13526" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13505"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DontSleepNow_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Don't Sleep Now!" id="QOM-oj-fcr"/>
+                        <label alignment="left" text="Label" id="aJq-Ux-c23"/>
+                        <label alignment="left" text="Label" id="G8c-sa-oQG"/>
+                        <label alignment="left" text="Label" id="Ouz-HE-Qpd"/>
+                        <button width="1" alignment="left" title="Start" id="aBi-OQ-Piq">
+                            <connections>
+                                <action selector="Start" destination="AgC-eL-Hgc" id="Za6-El-rCs"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="xString" destination="aJq-Ux-c23" id="Q1x-OF-9jm"/>
+                        <outlet property="yString" destination="G8c-sa-oQG" id="U4F-FF-AS8"/>
+                        <outlet property="zString" destination="Ouz-HE-Qpd" id="hr5-wH-v7T"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -31,7 +52,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="DontSleepNow_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
