@@ -1,0 +1,1507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		0A613017C310E50BC364899152E536F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3E28FC93E46C4778C303626C7CA9AB /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AFAA5C3128F2005ADECFD36E2085DC /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1DA5FCB6FC9EDA0D22883C685735B5 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
+		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF7FC5E92D31F27BC038941EA6A5A /* nanopb-dummy.m */; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E042612013FB6CD86A7F8229AA61BE1 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = AA70056BAD8EA3D683367B686F1E6B09 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = AF577CB3FB3CA827E64E6F3625F4804A /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		57D2E57B9DE26D6F4F25740267EFB76E /* Pods-DontSleepNowUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2329D13A0DBC89517647A587CEB4167A /* Pods-DontSleepNowUITests-dummy.m */; };
+		666B2C928C64B03211845E1762C9C39A /* Pods-DontSleepNowTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D12211E607CCFD9CD153105748EAAFFD /* Pods-DontSleepNowTests-dummy.m */; };
+		74BA85C53A484085A0B8712A6756ECE4 /* Pods-DontSleepNow WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C00037333E2CF5DD18878C28FC9CCA04 /* Pods-DontSleepNow WatchKit Extension-dummy.m */; };
+		75ACC6A69B83B686266A8492FE1A90C3 /* Pods-DontSleepNow WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4855CE5C59D6E15E1BF0A8BFC6C07AD2 /* Pods-DontSleepNow WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 841E491E4F984559D8FACA8D9B180DBA /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9DDF1EF2BBAE154BC6081D24CB6369 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		9E74A69EA591B3ADE797ACAD95402A78 /* Pods-DontSleepNow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2EADD52921EB7A7EC7625D7EA61741 /* Pods-DontSleepNow-dummy.m */; };
+		AC9D93D06EB271576803CD6BB2EBE206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		ADD40B2D7F9E136ECBBC2F4A9A6B622E /* Pods-DontSleepNow WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B71CC4C91EB14FD24BD130C066D66EC5 /* Pods-DontSleepNow WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53CC3980EB235FBB289E7216977E316 /* Pods-DontSleepNowTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4032D6E63596735A6D24B2D56ABAC299 /* Pods-DontSleepNowTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2CA75D23F61465F5641A8625CA1CED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		CFAD502FD98D3232C85BAB1EDA2C3074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		D6B618E8EA8BE1E7C7195D116C4B67CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		D75F0F5C538B39347EE10A5040AC353E /* Pods-DontSleepNow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F3310A3B6D589D3AE7C25C7BF0FBE2 /* Pods-DontSleepNow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = EA772F7A06348F33C61B7286F52EEF50 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD7C22389B44634AA1B0EBD9F1D107D8 /* Pods-DontSleepNow WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5237E6EAE97ACAAFF965846FF98B6DB6 /* Pods-DontSleepNow WatchKit App-dummy.m */; };
+		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E8F12766FD7202402AD690FB605B6 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6D096F7ECBCE6EF76F6CD53AFD99BFF /* Pods-DontSleepNowUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC66AC375E0648CC6B1DC11D0C27F50 /* Pods-DontSleepNowUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = F6156B8D6D3DD90AEE4394E6A26A89FE /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6F39ECB24CE5CFAA775B1CC1E891D9 /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C5F864762B7FE38AA845332172DE9 /* GoogleToolboxForMac-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52AE8BA5A9199DE59FA2E2A17EA2A0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DD95323C54A78F879DAB0F1508B8E7;
+			remoteInfo = nanopb;
+		};
+		664F58153BAC69090C6E7B637A25D45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D6B0CECF28E482C5A0488598DB9683 /* Pods-DontSleepNowTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DontSleepNowTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C1C146F8383C66FC84DF484DD919EF3 /* Pods-DontSleepNowUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DontSleepNowUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0CBEC7D82F39846B7710A33F004122FA /* Pods_DontSleepNow_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DontSleepNow_WatchKit_Extension.framework; path = "Pods-DontSleepNow WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1402139823938C3A1359D46CCE4D1A3F /* Pods-DontSleepNow WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNow WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		21F3310A3B6D589D3AE7C25C7BF0FBE2 /* Pods-DontSleepNow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DontSleepNow-umbrella.h"; sourceTree = "<group>"; };
+		2256FCF200611E079E5DF50423404CE0 /* Pods-DontSleepNow WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DontSleepNow WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		2329D13A0DBC89517647A587CEB4167A /* Pods-DontSleepNowUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DontSleepNowUITests-dummy.m"; sourceTree = "<group>"; };
+		2C4C12384AD56263C76A7D2EE7C3B499 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F30F8F53322BD8333B5A1ED173E5749 /* Pods-DontSleepNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNow.release.xcconfig"; sourceTree = "<group>"; };
+		38BBCCCED4B59998DCF430E8C9625F55 /* Pods-DontSleepNow-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNow-resources.sh"; sourceTree = "<group>"; };
+		39A6BE808DB0FFB5DFEED389A84FFDFB /* Pods-DontSleepNowTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DontSleepNowTests.modulemap"; sourceTree = "<group>"; };
+		4032D6E63596735A6D24B2D56ABAC299 /* Pods-DontSleepNowTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DontSleepNowTests-umbrella.h"; sourceTree = "<group>"; };
+		408A6147A85E819C97643B77240079FA /* Pods-DontSleepNow WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNow WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		417BC45972DDFE0DF7FF30C319982DC3 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450BF33C123429898802A3B93E5E5BF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4822196A3C299573EEA7386F51394B5F /* Pods-DontSleepNowTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNowTests-frameworks.sh"; sourceTree = "<group>"; };
+		4855CE5C59D6E15E1BF0A8BFC6C07AD2 /* Pods-DontSleepNow WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DontSleepNow WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		4A52DAAA468B82409B79E9F6FEFA3898 /* Pods-DontSleepNowTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNowTests-resources.sh"; sourceTree = "<group>"; };
+		4ACCFD3762D3A964F45FF4DB9920EECF /* Pods_DontSleepNowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DontSleepNowUITests.framework; path = "Pods-DontSleepNowUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7236B9B35B25C377B145591377CCD7 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		4C9CF7FC5E92D31F27BC038941EA6A5A /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		4DC308C5FE96030A9DECCEA76D0BDCBA /* Pods-DontSleepNow WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DontSleepNow WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DED9E673D4BFF32456187BB58E006AC /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		4E042612013FB6CD86A7F8229AA61BE1 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		4E6567503F957F9B2874798154FD074B /* Pods_DontSleepNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DontSleepNowTests.framework; path = "Pods-DontSleepNowTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E66819420F5AB96A7BF164321A96C39 /* Pods-DontSleepNow-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNow-frameworks.sh"; sourceTree = "<group>"; };
+		505C5F864762B7FE38AA845332172DE9 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		5237E6EAE97ACAAFF965846FF98B6DB6 /* Pods-DontSleepNow WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DontSleepNow WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		525DA80C02D869AB45C6D7E141484A4C /* Pods-DontSleepNow WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNow WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		52ED4DCE197912037C60BF2DD6B9E4E6 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		56CAA223ED48671D00B612679A4CFF93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5781526AD437A00C4907E175A1F9B824 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		57EB6205B8F1B31EAE7D1987D1866F7D /* Pods_DontSleepNow_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DontSleepNow_WatchKit_App.framework; path = "Pods-DontSleepNow WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5857319B3AF21174742939162D58FA56 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		5AC1B3E9642182725AAB52216F55582A /* Pods-DontSleepNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNowTests.release.xcconfig"; sourceTree = "<group>"; };
+		5ACADB9EF2837349C2A5F44E67B33B53 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		6088CBA464A33063002BF6B99A51311E /* Pods-DontSleepNowUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DontSleepNowUITests.modulemap"; sourceTree = "<group>"; };
+		6E6820344457953FBA480397D6886953 /* Pods-DontSleepNow-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DontSleepNow-acknowledgements.plist"; sourceTree = "<group>"; };
+		7648B15018D971376FA3F23EBAFE5EF5 /* Pods-DontSleepNowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		76720B026417625FB62285B73CECF0BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76AFAA5C3128F2005ADECFD36E2085DC /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		77C3A9C9AE5787EBFCDFD1BFA0BB21B2 /* Pods-DontSleepNow WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNow WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		7B9DDF1EF2BBAE154BC6081D24CB6369 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		7E3E28FC93E46C4778C303626C7CA9AB /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		800E1125D19510E8F835C6FA955ECA60 /* Pods-DontSleepNowUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DontSleepNowUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		80CE08BB5D4783F3E5F9DD5FEF9045E6 /* Pods-DontSleepNow WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNow WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		841E491E4F984559D8FACA8D9B180DBA /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
+		9146BB68B3D70DFF8FE9E6D32E8F372B /* Pods-DontSleepNow WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DontSleepNow WatchKit App.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96DE222DE413BDFDBA6170A07CC97B8D /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		A6BCCAD14BB5F8EC068830C18C3CB5D0 /* Pods-DontSleepNow WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNow WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		A9B3EF11B1D829B671E6EF9C907FE7E2 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		AA70056BAD8EA3D683367B686F1E6B09 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		AA834DA850486511B62149FAE12755F4 /* Pods-DontSleepNow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DontSleepNow.modulemap"; sourceTree = "<group>"; };
+		AD4A96FE3ED3BA751AF526083E2B8351 /* Pods-DontSleepNow WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNow WatchKit App-resources.sh"; sourceTree = "<group>"; };
+		AE2EADD52921EB7A7EC7625D7EA61741 /* Pods-DontSleepNow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DontSleepNow-dummy.m"; sourceTree = "<group>"; };
+		AE600F62733819E645F4173D5C882A0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF577CB3FB3CA827E64E6F3625F4804A /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		B2D766A684CD5DBB437E5C0DD3485CAF /* Pods-DontSleepNow WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DontSleepNow WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B71CC4C91EB14FD24BD130C066D66EC5 /* Pods-DontSleepNow WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DontSleepNow WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		B7D4025375109F0158E7CAC9C8E842C2 /* Pods-DontSleepNow WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DontSleepNow WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BC78335D1B3092E4D415AE18028A5496 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE1AF1E32665A8BB202EED5396DECE3 /* Pods_DontSleepNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DontSleepNow.framework; path = "Pods-DontSleepNow.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1A6257C603208E8F69C1551B338D30 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
+		C00037333E2CF5DD18878C28FC9CCA04 /* Pods-DontSleepNow WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DontSleepNow WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		C02BCEB53FFC5287F3AC2BC071233FC7 /* Pods-DontSleepNowUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNowUITests-resources.sh"; sourceTree = "<group>"; };
+		C86721493A6A8F398CA468EE6DF63016 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5DA3A13470C2FF21BD7CB19EC24DE8 /* Pods-DontSleepNow WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNow WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		CB1DA5FCB6FC9EDA0D22883C685735B5 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		CC3B63FD0E2D9F5FA6BA3F268FD60EFF /* Pods-DontSleepNow WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DontSleepNow WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D12211E607CCFD9CD153105748EAAFFD /* Pods-DontSleepNowTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DontSleepNowTests-dummy.m"; sourceTree = "<group>"; };
+		D4FA68C10AA90A9C8FB18295BF9A0F95 /* Pods-DontSleepNowTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DontSleepNowTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		D6ABF067ED026B85DD24989AB515D38A /* Pods-DontSleepNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D72234FA8DA0FFEEF0952C1E5A11194B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9E8F12766FD7202402AD690FB605B6 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		DF7AAE07B9DEB41C5BC512F74427C300 /* Pods-DontSleepNow-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DontSleepNow-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E3173D5A779CE19E959B34A296CE1713 /* Pods-DontSleepNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E461370646635AFEF7EFC41F3E574BC6 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		E659260E0916AB51199ACB8A25694DB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA772F7A06348F33C61B7286F52EEF50 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		EEFA4C6DC5FB51785462AF0FE3B7915E /* Pods-DontSleepNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DontSleepNow.debug.xcconfig"; sourceTree = "<group>"; };
+		F24B83A7D0CB10375605EB00C7F1FE63 /* Pods-DontSleepNowUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DontSleepNowUITests-frameworks.sh"; sourceTree = "<group>"; };
+		F6156B8D6D3DD90AEE4394E6A26A89FE /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		FDC66AC375E0648CC6B1DC11D0C27F50 /* Pods-DontSleepNowUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DontSleepNowUITests-umbrella.h"; sourceTree = "<group>"; };
+		FF6F39ECB24CE5CFAA775B1CC1E891D9 /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08B1DC2CC08E08BA42574BEEAC5AFF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B618E8EA8BE1E7C7195D116C4B67CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46553A841626889032BD6A5DE81FF6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2CA75D23F61465F5641A8625CA1CED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD3D05EDA536A3AC805F80963CB1A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAD502FD98D3232C85BAB1EDA2C3074 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971041836592E28ADEEDA495A96A62A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A2E13C41A001EC936357CE69CB677D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A613017C310E50BC364899152E536F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEA44D74C7C1EB95C478CE257C181FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9D93D06EB271576803CD6BB2EBE206 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21A7E46DAA9287ACE7D7E1BEE15C1470 /* Pods-DontSleepNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C12384AD56263C76A7D2EE7C3B499 /* Info.plist */,
+				39A6BE808DB0FFB5DFEED389A84FFDFB /* Pods-DontSleepNowTests.modulemap */,
+				02D6B0CECF28E482C5A0488598DB9683 /* Pods-DontSleepNowTests-acknowledgements.markdown */,
+				D4FA68C10AA90A9C8FB18295BF9A0F95 /* Pods-DontSleepNowTests-acknowledgements.plist */,
+				D12211E607CCFD9CD153105748EAAFFD /* Pods-DontSleepNowTests-dummy.m */,
+				4822196A3C299573EEA7386F51394B5F /* Pods-DontSleepNowTests-frameworks.sh */,
+				4A52DAAA468B82409B79E9F6FEFA3898 /* Pods-DontSleepNowTests-resources.sh */,
+				4032D6E63596735A6D24B2D56ABAC299 /* Pods-DontSleepNowTests-umbrella.h */,
+				E3173D5A779CE19E959B34A296CE1713 /* Pods-DontSleepNowTests.debug.xcconfig */,
+				5AC1B3E9642182725AAB52216F55582A /* Pods-DontSleepNowTests.release.xcconfig */,
+			);
+			name = "Pods-DontSleepNowTests";
+			path = "Target Support Files/Pods-DontSleepNowTests";
+			sourceTree = "<group>";
+		};
+		2450F200BED34D1A07E86053048A5A2B /* Pods-DontSleepNow WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE600F62733819E645F4173D5C882A0D /* Info.plist */,
+				CC3B63FD0E2D9F5FA6BA3F268FD60EFF /* Pods-DontSleepNow WatchKit Extension.modulemap */,
+				B7D4025375109F0158E7CAC9C8E842C2 /* Pods-DontSleepNow WatchKit Extension-acknowledgements.markdown */,
+				4DC308C5FE96030A9DECCEA76D0BDCBA /* Pods-DontSleepNow WatchKit Extension-acknowledgements.plist */,
+				C00037333E2CF5DD18878C28FC9CCA04 /* Pods-DontSleepNow WatchKit Extension-dummy.m */,
+				1402139823938C3A1359D46CCE4D1A3F /* Pods-DontSleepNow WatchKit Extension-frameworks.sh */,
+				77C3A9C9AE5787EBFCDFD1BFA0BB21B2 /* Pods-DontSleepNow WatchKit Extension-resources.sh */,
+				4855CE5C59D6E15E1BF0A8BFC6C07AD2 /* Pods-DontSleepNow WatchKit Extension-umbrella.h */,
+				80CE08BB5D4783F3E5F9DD5FEF9045E6 /* Pods-DontSleepNow WatchKit Extension.debug.xcconfig */,
+				A6BCCAD14BB5F8EC068830C18C3CB5D0 /* Pods-DontSleepNow WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-DontSleepNow WatchKit Extension";
+			path = "Target Support Files/Pods-DontSleepNow WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		26AC2BCD6590CC43B9201B747C0D96A3 /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				76AFAA5C3128F2005ADECFD36E2085DC /* pb.h */,
+				CB1DA5FCB6FC9EDA0D22883C685735B5 /* pb_common.c */,
+				841E491E4F984559D8FACA8D9B180DBA /* pb_common.h */,
+				AA70056BAD8EA3D683367B686F1E6B09 /* pb_decode.c */,
+				7E3E28FC93E46C4778C303626C7CA9AB /* pb_decode.h */,
+				AF577CB3FB3CA827E64E6F3625F4804A /* pb_encode.c */,
+				DD9E8F12766FD7202402AD690FB605B6 /* pb_encode.h */,
+				65E3046628F4D647CEAAF43F67601B15 /* decode */,
+				DDAA44E2142E64238AC963E5FEE6F255 /* encode */,
+				E2263F271769C0C11030EBFC54582B2D /* Support Files */,
+			);
+			name = nanopb;
+			path = nanopb;
+			sourceTree = "<group>";
+		};
+		35B180DE65DF96286E579D4B71276075 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				9423BF591DA4C65CAEC62D1E98DA477F /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		39CE19040176CD3AD3CA0CB1A5B08CF2 /* Pods-DontSleepNow */ = {
+			isa = PBXGroup;
+			children = (
+				BC78335D1B3092E4D415AE18028A5496 /* Info.plist */,
+				AA834DA850486511B62149FAE12755F4 /* Pods-DontSleepNow.modulemap */,
+				DF7AAE07B9DEB41C5BC512F74427C300 /* Pods-DontSleepNow-acknowledgements.markdown */,
+				6E6820344457953FBA480397D6886953 /* Pods-DontSleepNow-acknowledgements.plist */,
+				AE2EADD52921EB7A7EC7625D7EA61741 /* Pods-DontSleepNow-dummy.m */,
+				4E66819420F5AB96A7BF164321A96C39 /* Pods-DontSleepNow-frameworks.sh */,
+				38BBCCCED4B59998DCF430E8C9625F55 /* Pods-DontSleepNow-resources.sh */,
+				21F3310A3B6D589D3AE7C25C7BF0FBE2 /* Pods-DontSleepNow-umbrella.h */,
+				EEFA4C6DC5FB51785462AF0FE3B7915E /* Pods-DontSleepNow.debug.xcconfig */,
+				2F30F8F53322BD8333B5A1ED173E5749 /* Pods-DontSleepNow.release.xcconfig */,
+			);
+			name = "Pods-DontSleepNow";
+			path = "Target Support Files/Pods-DontSleepNow";
+			sourceTree = "<group>";
+		};
+		482EA88B9136A5A573514953C7FCB52D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4B9142EE16817DA8ABEE766F4C833BA8 /* Pods-DontSleepNow WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				450BF33C123429898802A3B93E5E5BF1 /* Info.plist */,
+				9146BB68B3D70DFF8FE9E6D32E8F372B /* Pods-DontSleepNow WatchKit App.modulemap */,
+				B2D766A684CD5DBB437E5C0DD3485CAF /* Pods-DontSleepNow WatchKit App-acknowledgements.markdown */,
+				2256FCF200611E079E5DF50423404CE0 /* Pods-DontSleepNow WatchKit App-acknowledgements.plist */,
+				5237E6EAE97ACAAFF965846FF98B6DB6 /* Pods-DontSleepNow WatchKit App-dummy.m */,
+				408A6147A85E819C97643B77240079FA /* Pods-DontSleepNow WatchKit App-frameworks.sh */,
+				AD4A96FE3ED3BA751AF526083E2B8351 /* Pods-DontSleepNow WatchKit App-resources.sh */,
+				B71CC4C91EB14FD24BD130C066D66EC5 /* Pods-DontSleepNow WatchKit App-umbrella.h */,
+				525DA80C02D869AB45C6D7E141484A4C /* Pods-DontSleepNow WatchKit App.debug.xcconfig */,
+				CA5DA3A13470C2FF21BD7CB19EC24DE8 /* Pods-DontSleepNow WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-DontSleepNow WatchKit App";
+			path = "Target Support Files/Pods-DontSleepNow WatchKit App";
+			sourceTree = "<group>";
+		};
+		4D0ED424ABD1E124FA717B88C2FF9407 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39CE19040176CD3AD3CA0CB1A5B08CF2 /* Pods-DontSleepNow */,
+				4B9142EE16817DA8ABEE766F4C833BA8 /* Pods-DontSleepNow WatchKit App */,
+				2450F200BED34D1A07E86053048A5A2B /* Pods-DontSleepNow WatchKit Extension */,
+				21A7E46DAA9287ACE7D7E1BEE15C1470 /* Pods-DontSleepNowTests */,
+				767AB2C4EBC12A39FD60298848478FD4 /* Pods-DontSleepNowUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		65E3046628F4D647CEAAF43F67601B15 /* decode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = decode;
+			sourceTree = "<group>";
+		};
+		6622A43E648F09BFA3C3FFED517547E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52ED4DCE197912037C60BF2DD6B9E4E6 /* FirebaseCore.framework */,
+				E461370646635AFEF7EFC41F3E574BC6 /* FirebaseCoreDiagnostics.framework */,
+				4DED9E673D4BFF32456187BB58E006AC /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		767AB2C4EBC12A39FD60298848478FD4 /* Pods-DontSleepNowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D72234FA8DA0FFEEF0952C1E5A11194B /* Info.plist */,
+				6088CBA464A33063002BF6B99A51311E /* Pods-DontSleepNowUITests.modulemap */,
+				0C1C146F8383C66FC84DF484DD919EF3 /* Pods-DontSleepNowUITests-acknowledgements.markdown */,
+				800E1125D19510E8F835C6FA955ECA60 /* Pods-DontSleepNowUITests-acknowledgements.plist */,
+				2329D13A0DBC89517647A587CEB4167A /* Pods-DontSleepNowUITests-dummy.m */,
+				F24B83A7D0CB10375605EB00C7F1FE63 /* Pods-DontSleepNowUITests-frameworks.sh */,
+				C02BCEB53FFC5287F3AC2BC071233FC7 /* Pods-DontSleepNowUITests-resources.sh */,
+				FDC66AC375E0648CC6B1DC11D0C27F50 /* Pods-DontSleepNowUITests-umbrella.h */,
+				D6ABF067ED026B85DD24989AB515D38A /* Pods-DontSleepNowUITests.debug.xcconfig */,
+				7648B15018D971376FA3F23EBAFE5EF5 /* Pods-DontSleepNowUITests.release.xcconfig */,
+			);
+			name = "Pods-DontSleepNowUITests";
+			path = "Target Support Files/Pods-DontSleepNowUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				D20196F804763B3817DC669C74EEB701 /* Pods */,
+				7FBB3917D715A3678F968ED4C1237715 /* Products */,
+				4D0ED424ABD1E124FA717B88C2FF9407 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FBB3917D715A3678F968ED4C1237715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C86721493A6A8F398CA468EE6DF63016 /* GoogleToolboxForMac.framework */,
+				417BC45972DDFE0DF7FF30C319982DC3 /* nanopb.framework */,
+				BDE1AF1E32665A8BB202EED5396DECE3 /* Pods_DontSleepNow.framework */,
+				57EB6205B8F1B31EAE7D1987D1866F7D /* Pods_DontSleepNow_WatchKit_App.framework */,
+				0CBEC7D82F39846B7710A33F004122FA /* Pods_DontSleepNow_WatchKit_Extension.framework */,
+				4E6567503F957F9B2874798154FD074B /* Pods_DontSleepNowTests.framework */,
+				4ACCFD3762D3A964F45FF4DB9920EECF /* Pods_DontSleepNowUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FE25D69C3023269B595924C6F0132A8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5781526AD437A00C4907E175A1F9B824 /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		80C3C3A055A13D9D785ABCB328851306 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				9D483E403F20E4E7732519140738498E /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482EA88B9136A5A573514953C7FCB52D /* iOS */,
+				FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9423BF591DA4C65CAEC62D1E98DA477F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5857319B3AF21174742939162D58FA56 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D483E403F20E4E7732519140738498E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3EF11B1D829B671E6EF9C907FE7E2 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A31CE44F23BD44F7DAAFB31F03A5A658 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				EA772F7A06348F33C61B7286F52EEF50 /* GTMNSData+zlib.h */,
+				F6156B8D6D3DD90AEE4394E6A26A89FE /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		D20196F804763B3817DC669C74EEB701 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D52BBEEEDDC743540AC81A7F5CC6B0D4 /* Firebase */,
+				80C3C3A055A13D9D785ABCB328851306 /* FirebaseAnalytics */,
+				E6CB943C73DCEC88D96BDAA383BFBB9A /* FirebaseCore */,
+				35B180DE65DF96286E579D4B71276075 /* FirebaseInstanceID */,
+				FF8C567B4D0A26B622469EC328AEB1EF /* GoogleToolboxForMac */,
+				26AC2BCD6590CC43B9201B747C0D96A3 /* nanopb */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D52BBEEEDDC743540AC81A7F5CC6B0D4 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				7FE25D69C3023269B595924C6F0132A8 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		DDAA44E2142E64238AC963E5FEE6F255 /* encode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = encode;
+			sourceTree = "<group>";
+		};
+		E2263F271769C0C11030EBFC54582B2D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56CAA223ED48671D00B612679A4CFF93 /* Info.plist */,
+				BF1A6257C603208E8F69C1551B338D30 /* nanopb.modulemap */,
+				8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */,
+				4C9CF7FC5E92D31F27BC038941EA6A5A /* nanopb-dummy.m */,
+				4B7236B9B35B25C377B145591377CCD7 /* nanopb-prefix.pch */,
+				FF6F39ECB24CE5CFAA775B1CC1E891D9 /* nanopb-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/nanopb";
+			sourceTree = "<group>";
+		};
+		E6CB943C73DCEC88D96BDAA383BFBB9A /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				6622A43E648F09BFA3C3FFED517547E4 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		E91EC75B28AD480FFDC1E0CB5FE25045 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ACADB9EF2837349C2A5F44E67B33B53 /* GoogleToolboxForMac.modulemap */,
+				D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */,
+				505C5F864762B7FE38AA845332172DE9 /* GoogleToolboxForMac-dummy.m */,
+				96DE222DE413BDFDBA6170A07CC97B8D /* GoogleToolboxForMac-prefix.pch */,
+				7B9DDF1EF2BBAE154BC6081D24CB6369 /* GoogleToolboxForMac-umbrella.h */,
+				E659260E0916AB51199ACB8A25694DB6 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				76720B026417625FB62285B73CECF0BF /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		FDFA9160E6192D29983621263A722A0D /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				4E042612013FB6CD86A7F8229AA61BE1 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		FF8C567B4D0A26B622469EC328AEB1EF /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				FDFA9160E6192D29983621263A722A0D /* Defines */,
+				A31CE44F23BD44F7DAAFB31F03A5A658 /* NSData+zlib */,
+				E91EC75B28AD480FFDC1E0CB5FE25045 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		21F7C44ED337E07AF2BBBB0E6EA6DD33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53CC3980EB235FBB289E7216977E316 /* Pods-DontSleepNowTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A0F1BCFEA1101CA4EE35FC2A97CF60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75F0F5C538B39347EE10A5040AC353E /* Pods-DontSleepNow-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4547B9AF8085A499AA35614798F8F9E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */,
+				392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */,
+				806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */,
+				29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */,
+				E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3F0EAF13C6F0CC38A261890D83C0DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD40B2D7F9E136ECBBC2F4A9A6B622E /* Pods-DontSleepNow WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE6116E9BB27CBA2EC72976E672EAF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D096F7ECBCE6EF76F6CD53AFD99BFF /* Pods-DontSleepNowUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BB31F2DDD7498534E2CC0CF4F4FF68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75ACC6A69B83B686266A8492FE1A90C3 /* Pods-DontSleepNow WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */,
+				DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */,
+				F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */,
+				FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = C86721493A6A8F398CA468EE6DF63016 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1BA1CC75EDE4FEBF2867DDF4EF0388E7 /* Pods-DontSleepNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C44A03191DFC592C8F3A810EA90EC6 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNow" */;
+			buildPhases = (
+				C587EA389C61A7707D7F9B0B5ED1C57C /* Sources */,
+				EEEA44D74C7C1EB95C478CE257C181FF /* Frameworks */,
+				34A0F1BCFEA1101CA4EE35FC2A97CF60 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ABAA6F465173B139D89D1001FE521CE /* PBXTargetDependency */,
+				24FAFCA11D9391FAFD5D8814B55197CB /* PBXTargetDependency */,
+			);
+			name = "Pods-DontSleepNow";
+			productName = "Pods-DontSleepNow";
+			productReference = BDE1AF1E32665A8BB202EED5396DECE3 /* Pods_DontSleepNow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F5A792F2DBFA9D858A7CA0557F7D2BC /* Pods-DontSleepNow WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DD8B969AD7F2C9B79FEB2745A206D5 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNow WatchKit Extension" */;
+			buildPhases = (
+				108F1DD159C59CB0BDA177B9BD92947C /* Sources */,
+				C4A2E13C41A001EC936357CE69CB677D /* Frameworks */,
+				E2BB31F2DDD7498534E2CC0CF4F4FF68 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DontSleepNow WatchKit Extension";
+			productName = "Pods-DontSleepNow WatchKit Extension";
+			productReference = 0CBEC7D82F39846B7710A33F004122FA /* Pods_DontSleepNow_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B055F728047331345A028C5FA4B829B1 /* Pods-DontSleepNowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5953978CF456FC76CDE9A6EDB58ABBE0 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNowUITests" */;
+			buildPhases = (
+				9AFF98B68E726BA864CCCA1A0CF4266F /* Sources */,
+				08B1DC2CC08E08BA42574BEEAC5AFF5D /* Frameworks */,
+				CDE6116E9BB27CBA2EC72976E672EAF7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DontSleepNowUITests";
+			productName = "Pods-DontSleepNowUITests";
+			productReference = 4ACCFD3762D3A964F45FF4DB9920EECF /* Pods_DontSleepNowUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC5E7042559A9453472016DE3681A7F4 /* Pods-DontSleepNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360B3CE1237540127C7A16820BB5DCE8 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNowTests" */;
+			buildPhases = (
+				7F97BE369D612A43889D982273ECBAD6 /* Sources */,
+				46553A841626889032BD6A5DE81FF6D7 /* Frameworks */,
+				21F7C44ED337E07AF2BBBB0E6EA6DD33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DontSleepNowTests";
+			productName = "Pods-DontSleepNowTests";
+			productReference = 4E6567503F957F9B2874798154FD074B /* Pods_DontSleepNowTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				238527BE8D494586023F2A2B8A60D242 /* Sources */,
+				971041836592E28ADEEDA495A96A62A2 /* Frameworks */,
+				4547B9AF8085A499AA35614798F8F9E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = nanopb;
+			productReference = 417BC45972DDFE0DF7FF30C319982DC3 /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAA7CC67C491A894964FA619827A4776 /* Pods-DontSleepNow WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721764F67622AA8CD14DF3322BBD13DC /* Build configuration list for PBXNativeTarget "Pods-DontSleepNow WatchKit App" */;
+			buildPhases = (
+				75A4A1AF80597485CB8803E55512966B /* Sources */,
+				5BDD3D05EDA536A3AC805F80963CB1A6 /* Frameworks */,
+				6A3F0EAF13C6F0CC38A261890D83C0DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DontSleepNow WatchKit App";
+			productName = "Pods-DontSleepNow WatchKit App";
+			productReference = 57EB6205B8F1B31EAE7D1987D1866F7D /* Pods_DontSleepNow_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7FBB3917D715A3678F968ED4C1237715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
+				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
+				1BA1CC75EDE4FEBF2867DDF4EF0388E7 /* Pods-DontSleepNow */,
+				FAA7CC67C491A894964FA619827A4776 /* Pods-DontSleepNow WatchKit App */,
+				4F5A792F2DBFA9D858A7CA0557F7D2BC /* Pods-DontSleepNow WatchKit Extension */,
+				DC5E7042559A9453472016DE3681A7F4 /* Pods-DontSleepNowTests */,
+				B055F728047331345A028C5FA4B829B1 /* Pods-DontSleepNowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		108F1DD159C59CB0BDA177B9BD92947C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74BA85C53A484085A0B8712A6756ECE4 /* Pods-DontSleepNow WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238527BE8D494586023F2A2B8A60D242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */,
+				3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */,
+				54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */,
+				55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
+				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A4A1AF80597485CB8803E55512966B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C22389B44634AA1B0EBD9F1D107D8 /* Pods-DontSleepNow WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F97BE369D612A43889D982273ECBAD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666B2C928C64B03211845E1762C9C39A /* Pods-DontSleepNowTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFF98B68E726BA864CCCA1A0CF4266F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D2E57B9DE26D6F4F25740267EFB76E /* Pods-DontSleepNowUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C587EA389C61A7707D7F9B0B5ED1C57C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E74A69EA591B3ADE797ACAD95402A78 /* Pods-DontSleepNow-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24FAFCA11D9391FAFD5D8814B55197CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */;
+			targetProxy = 52AE8BA5A9199DE59FA2E2A17EA2A0E8 /* PBXContainerItemProxy */;
+		};
+		2ABAA6F465173B139D89D1001FE521CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = 664F58153BAC69090C6E7B637A25D45E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F2988E68C7944F28AF58854A8969275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19421072E1193CFA35FB6EAC2493E739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22D56DC21563E67E21F657C8CE558F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80CE08BB5D4783F3E5F9DD5FEF9045E6 /* Pods-DontSleepNow WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNow WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNow WatchKit Extension/Pods-DontSleepNow WatchKit Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNow_WatchKit_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		304A972189E3C9D9FCF1680F44B2883D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 525DA80C02D869AB45C6D7E141484A4C /* Pods-DontSleepNow WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNow WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNow WatchKit App/Pods-DontSleepNow WatchKit App.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNow_WatchKit_App;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		3A76ECC08A7617D20F91B16109937718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		3C9DB462BAEBEC487A1F4A7A072C14BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		427B256802407C4F453D8973521CAC60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA5DA3A13470C2FF21BD7CB19EC24DE8 /* Pods-DontSleepNow WatchKit App.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNow WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNow WatchKit App/Pods-DontSleepNow WatchKit App.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNow_WatchKit_App;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		538EEF56F86CD86F7749E3B8152743D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6BCCAD14BB5F8EC068830C18C3CB5D0 /* Pods-DontSleepNow WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNow WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNow WatchKit Extension/Pods-DontSleepNow WatchKit Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNow_WatchKit_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		94B8D74795442C92744F94EC068D541B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEFA4C6DC5FB51785462AF0FE3B7915E /* Pods-DontSleepNow.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNow/Pods-DontSleepNow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9652C7FAC96B83AC75D63F22BB8CD173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC1B3E9642182725AAB52216F55582A /* Pods-DontSleepNowTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNowTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNowTests/Pods-DontSleepNowTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNowTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F8E98CD6CA36749808E6A8902EDEB55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4B64AD1ED48F91959FFDCB7E17DE9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F30F8F53322BD8333B5A1ED173E5749 /* Pods-DontSleepNow.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNow/Pods-DontSleepNow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6DB860CAC6B6D0D01837A5B2A9D6415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACA934596C03C4391A40D338E595ADA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6ABF067ED026B85DD24989AB515D38A /* Pods-DontSleepNowUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNowUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNowUITests/Pods-DontSleepNowUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNowUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9B3959AD66485E65A5FDF4CB008C026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7648B15018D971376FA3F23EBAFE5EF5 /* Pods-DontSleepNowUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNowUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNowUITests/Pods-DontSleepNowUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNowUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0DBDB8CD7B062CFC87042215CE47426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3173D5A779CE19E959B34A296CE1713 /* Pods-DontSleepNowTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DontSleepNowTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DontSleepNowTests/Pods-DontSleepNowTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DontSleepNowTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11DD8B969AD7F2C9B79FEB2745A206D5 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNow WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D56DC21563E67E21F657C8CE558F80 /* Debug */,
+				538EEF56F86CD86F7749E3B8152743D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C44A03191DFC592C8F3A810EA90EC6 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B8D74795442C92744F94EC068D541B /* Debug */,
+				A4B64AD1ED48F91959FFDCB7E17DE9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9DB462BAEBEC487A1F4A7A072C14BB /* Debug */,
+				3A76ECC08A7617D20F91B16109937718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360B3CE1237540127C7A16820BB5DCE8 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0DBDB8CD7B062CFC87042215CE47426 /* Debug */,
+				9652C7FAC96B83AC75D63F22BB8CD173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5953978CF456FC76CDE9A6EDB58ABBE0 /* Build configuration list for PBXNativeTarget "Pods-DontSleepNowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA934596C03C4391A40D338E595ADA7 /* Debug */,
+				D9B3959AD66485E65A5FDF4CB008C026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721764F67622AA8CD14DF3322BBD13DC /* Build configuration list for PBXNativeTarget "Pods-DontSleepNow WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304A972189E3C9D9FCF1680F44B2883D /* Debug */,
+				427B256802407C4F453D8973521CAC60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2988E68C7944F28AF58854A8969275 /* Debug */,
+				9F8E98CD6CA36749808E6A8902EDEB55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DB860CAC6B6D0D01837A5B2A9D6415 /* Debug */,
+				19421072E1193CFA35FB6EAC2493E739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

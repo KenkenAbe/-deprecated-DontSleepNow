@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13526" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,30 +8,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13505"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialHB.ttc">
+            <string>ArialHebrew-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DontSleepNow_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Don't Sleep Now!" id="QOM-oj-fcr"/>
-                        <label alignment="left" text="Label" id="aJq-Ux-c23"/>
-                        <label alignment="left" text="Label" id="G8c-sa-oQG"/>
-                        <label alignment="left" text="Label" id="Ouz-HE-Qpd"/>
-                        <button width="1" alignment="left" title="Start" id="aBi-OQ-Piq">
+                        <label alignment="left" text="設定時間" id="QOM-oj-fcr"/>
+                        <timer width="136" height="29" alignment="left" textAlignment="center" previewedSeconds="3602" id="8EI-1E-eIE">
+                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="30"/>
+                            <calendarUnit key="units" minute="YES"/>
+                        </timer>
+                        <label width="136" alignment="left" text="minutes" textAlignment="center" id="gV9-XO-KDi">
+                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="15"/>
+                        </label>
+                        <button width="1" height="44" alignment="left" title="Start" id="aBi-OQ-Piq">
                             <connections>
                                 <action selector="Start" destination="AgC-eL-Hgc" id="Za6-El-rCs"/>
                             </connections>
                         </button>
+                        <button width="1" height="41" alignment="left" title="Cancel" id="nmX-WM-ooY"/>
                     </items>
-                    <connections>
-                        <outlet property="xString" destination="aJq-Ux-c23" id="Q1x-OF-9jm"/>
-                        <outlet property="yString" destination="G8c-sa-oQG" id="U4F-FF-AS8"/>
-                        <outlet property="zString" destination="Ouz-HE-Qpd" id="hr5-wH-v7T"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.69230769230771" y="339.5641025641026"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

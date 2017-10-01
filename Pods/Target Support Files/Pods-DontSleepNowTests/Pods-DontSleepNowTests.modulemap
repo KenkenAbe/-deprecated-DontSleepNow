@@ -1,0 +1,6 @@
+framework module Pods_DontSleepNowTests {
+  umbrella header "Pods-DontSleepNowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

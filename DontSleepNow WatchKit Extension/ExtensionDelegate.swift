@@ -7,11 +7,77 @@
 //
 
 import WatchKit
+import WatchConnectivity
+import CoreMotion
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate,WCSessionDelegate {
+    let motionManager = CMMotionManager()
+    let queue = OperationQueue()
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void)
+    {
+        // 処理
+        let shori = message["action"] as! String
+        
+        print(shori)
+        if (shori == "catch"){
+            if !motionManager.isDeviceMotionAvailable {
+                print("Device Motion is not available.")
+                return
+            }
+            
+            motionManager.startDeviceMotionUpdates(to: queue) { (deviceMotion: CMDeviceMotion?, error: Error?) in
+                if error != nil {
+                    print("Encountered error: \(error!)")
+                }
+                
+                if deviceMotion != nil {
+                    print("attitude = \(deviceMotion!.attitude)")
+                    print("gravity = \(deviceMotion!.gravity)")
+                    print("rotationRate = \(deviceMotion!.rotationRate)")
+                    print("userAcceleration = \(deviceMotion!.userAcceleration)")
+                    
+                    let pointX = deviceMotion?.gravity.x
+                    let pointY = deviceMotion?.gravity.y
+                    
+                    let reply:Dictionary = ["Result1":pointX,"Result2":pointY]
+                    
+                    replyHandler(reply)
+                }
+            }
+        }
+        
+        if (shori == "Alert"){
+            WKInterfaceDevice.current().play(WKHapticType.failure)
+            replyHandler(["Result":"OK"] as! [String : Any])
+        }
+        
+        if (WCSession.default.isReachable) {
+            let message = ["action" : "wait"]
+            WCSession.default.sendMessage(message, replyHandler: { (replyDict) -> Void in
+                
+            }, errorHandler: { (error) -> Void in
+                print(error)
+            }
+                
+            )}
+        
+        
+    }
+    
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        
+        if (WCSession.isSupported()) {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
     }
 
     func applicationDidBecomeActive() {
